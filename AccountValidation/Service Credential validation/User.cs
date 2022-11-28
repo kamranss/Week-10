@@ -13,7 +13,21 @@ namespace AccountValidation.Service_Credential_validation
         public int Id { get; private set; }
         public int Fullname { get; set; }
         public int Email { get; set; }
-        public int Password { get; set; }
+        public int Password 
+        { 
+            get
+            {
+                _ = Password;
+            }
+            set
+            {
+                if (PasswordChecker(Password) == true)
+                {
+                    return
+                        Password;
+                }
+            }
+        }
 
         Regex Passwordcheck = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$");
 
@@ -34,8 +48,9 @@ namespace AccountValidation.Service_Credential_validation
 
         public string ShowInfo()
         {
-            return
-            (Console.WriteLine($"User Id ->> {Id}, User Fullname ->> {Fullname}, User Email ->> {Email}");
+
+            Console.WriteLine($"User Id ->> {Id}, User Fullname ->> {Fullname}, User Email ->> {Email}");
+            return "0";
         }
     }
 }
