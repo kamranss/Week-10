@@ -13,18 +13,23 @@ namespace AccountValidation.Service_Credential_validation
         public int Id { get; private set; }
         public int Fullname { get; set; }
         public int Email { get; set; }
-        public int Password 
+        public string Password 
         { 
             get
             {
-                _ = Password;
+                 
+                return Password;
             }
             set
             {
                 if (PasswordChecker(Password) == true)
                 {
-                    return
-                        Password;
+                    
+                        Password = Password;
+                }
+                else
+                {
+                    Console.WriteLine(" You cannot choose this password");
                 }
             }
         }
