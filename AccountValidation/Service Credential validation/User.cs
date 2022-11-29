@@ -13,12 +13,12 @@ namespace AccountValidation.Service_Credential_validation
         public int Id { get; private set; }
         public string Fullname { get; set; }
         public string Email { get; set; }
+
         private string _password;
         public string Password 
         { 
             get
-            {
-                 
+            {                
                 return _password;
             }
             set
@@ -29,18 +29,12 @@ namespace AccountValidation.Service_Credential_validation
                 }
                 else
                 {
-                    Console.WriteLine(" You cannot choose this password");
-
+                    Console.WriteLine(" << You cannot choose this password >>\n << Your password should follow provided structure >>");
                 }
             }
         }
-
-
-        //Regex Passwordcheck = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$");
-        //Regex Passwordcheck2 = new Regex(@"^[a-zA-Z0-9._-]{8,}\$");
-        Regex Passwordcheck3 = new Regex("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
-
        
+        Regex Passwordcheck3 = new Regex("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
 
         public User()
         {
@@ -64,7 +58,6 @@ namespace AccountValidation.Service_Credential_validation
         {
             if (Passwordcheck3.IsMatch(password))
             {
-               
                 return true;
             }
             return false;
@@ -72,7 +65,6 @@ namespace AccountValidation.Service_Credential_validation
 
         public void ShowInfo()
         {
-
           Console.Write(($" User Id ->> {Id}\n User Fullname ->> {Fullname}\n User Password ->> {Password}\n User Email ->> {Email}")); 
         }
     }
