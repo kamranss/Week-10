@@ -47,7 +47,7 @@ namespace AccountValidation.Service_Credential_validation
             idCount++;
             Id = idCount;
 
-            Console.Write("Write pasword Your password should contain the following ( at leats 8 carachters, at least 1 Digit, at least 1 Capital leter, at least 1 small latter)  ->>");
+            Console.Write(" Write pasword \n Your password should contain the following atributes\n 1. at leats 8 carachters\n 2. at least 1 Digit\n 3. at least 1 Capital leter\n 4. at least 1 small latter\n  ->>");
             while (true)
             {
                 Password = Console.ReadLine();
