@@ -1,0 +1,15 @@
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.csproj.AssemblyReference.cache
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.AssemblyInfoInputs.cache
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.AssemblyInfo.cs
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.csproj.CoreCompileInputs.cache
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\bin\Debug\net6.0\AccountValidation.exe
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\bin\Debug\net6.0\AccountValidation.deps.json
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\bin\Debug\net6.0\AccountValidation.runtimeconfig.json
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\bin\Debug\net6.0\AccountValidation.dll
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\bin\Debug\net6.0\AccountValidation.pdb
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.dll
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\refint\AccountValidation.dll
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.pdb
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\AccountValidation.genruntimeconfig.cache
+C:\Users\kamra\source\repos\AccountValidation\AccountValidation\obj\Debug\net6.0\ref\AccountValidation.dll

@@ -11,8 +11,8 @@ namespace AccountValidation.Service_Credential_validation
     {
         static int idCount = 0;
         public int Id { get; private set; }
-        public int Fullname { get; set; }
-        public int Email { get; set; }
+        public string Fullname { get; set; }
+        public string Email { get; set; }
         public string Password 
         { 
             get
@@ -22,10 +22,10 @@ namespace AccountValidation.Service_Credential_validation
             }
             set
             {
-                if (PasswordChecker(Password) == true)
+                if (PasswordChecker(value))
                 {
-                    
-                        Password = Password;
+                    Password = value;
+                        
                 }
                 else
                 {
@@ -33,6 +33,7 @@ namespace AccountValidation.Service_Credential_validation
                 }
             }
         }
+
 
         Regex Passwordcheck = new Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$");
 
@@ -46,7 +47,7 @@ namespace AccountValidation.Service_Credential_validation
         {
             if (Passwordcheck.IsMatch(password))
             {
-                return true;
+               Password = password;
             }
             return false;
         }

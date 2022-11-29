@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AccountValidation
 {
-    internal class IAccount
+    internal interface IAccount
     {
+        public bool PasswordChecker(string password);
+        public string ShowInfo();
     }
 }
