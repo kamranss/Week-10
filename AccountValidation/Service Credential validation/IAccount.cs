@@ -9,6 +9,6 @@ namespace AccountValidation
     internal interface IAccount
     {
         public bool PasswordChecker(string password);
-        public string ShowInfo();
+        public void ShowInfo();
     }
 }
